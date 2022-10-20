@@ -36,15 +36,8 @@ interface ITextTypos {
 }
 
 interface IBrandColors {
-    brand2: string;
     brand1: string;
-    brand3: string;
-    brand4: string;
-}
-
-interface IBrandColors {
     brand2: string;
-    brand1: string;
     brand3: string;
     brand4: string;
 }
