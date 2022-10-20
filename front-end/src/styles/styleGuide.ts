@@ -66,7 +66,7 @@ interface IFeedbackColors {
     sucess3: string;
 }
 
-interface IRandomColors {
+export interface IRandomColors {
     random1: string;
     random2: string;
     random3: string;
