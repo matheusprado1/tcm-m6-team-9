@@ -34,4 +34,12 @@ export const HeaderStyled = styled.header`
             }
         }
     }
+
+    @media screen and (min-width: 800px) {
+        section {
+            .btn-menu-icon {
+                display: none;
+            }
+        }
+    }
 `;

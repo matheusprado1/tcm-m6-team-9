@@ -25,7 +25,7 @@ export function Header(): JSX.Element {
                 </button>
             </section>
 
-           <Nav isMenuOpened={IsMenuOpened}/>
+           <Nav className={IsMenuOpened ? 'nav opened' : 'nav'}/>
         </HeaderStyled>
     )
 }
