@@ -1,6 +1,6 @@
-function App() {
-  
-  return <h1>Ola, Mundo!</h1>
-}
+import { Header } from "./components/header"
 
-export default App
+export function App(): JSX.Element {
+  
+  return <Header/>
+}
