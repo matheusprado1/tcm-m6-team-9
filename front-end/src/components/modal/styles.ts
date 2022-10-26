@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledBackground = styled.div`
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
 
     top: 0;
@@ -13,7 +13,6 @@ export const StyledBackground = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `;
 export const StyledModal = styled.div`
     width: 95%;
@@ -33,17 +32,18 @@ export const StyledModal = styled.div`
         h1 {
             color: ${({ theme }) => theme.color.greyScale.grey1};
         }
-        p {
-            color: ${({ theme }) => theme.color.greyScale.grey4};
-            &:hover {
-                cursor: pointer;
-            }
-        }
+    }
 
-        .modal_title {
-            font-weight: ${({ theme }) => theme.typo.heading7_500.weight};
-            font-size: ${({ theme }) => theme.typo.heading7_500.size};
-            font-family: ${({ theme }) => theme.typo.heading7_500.fontFamily};
+    .modal_title {
+        font-weight: ${({ theme }) => theme.typo.heading7_500.weight};
+        font-size: ${({ theme }) => theme.typo.heading7_500.size};
+        font-family: ${({ theme }) => theme.typo.heading7_500.fontFamily};
+    }
+
+    .button_exit {
+        color: ${({ theme }) => theme.color.greyScale.grey4};
+        &:hover {
+            cursor: pointer;
         }
     }
 
