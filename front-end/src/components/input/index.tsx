@@ -21,7 +21,7 @@ export function Input({
     defaultValue,
     register,
     error,
-}: InputProps) {
+}: InputProps): JSX.Element {
     const [value, setValue] = useState<string>(
         defaultValue ? defaultValue : ""
     );

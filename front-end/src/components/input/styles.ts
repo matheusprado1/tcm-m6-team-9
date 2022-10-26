@@ -8,7 +8,7 @@ interface InputProps {
 export const StyledInput = styled.div<InputProps>`
     width: 100%;
     max-width: ${({ width }) => (width === "small" ? "140px" : "315px")};
-    height: ${({ type }) => (type === "textArea" ? "105px" : "73px")};
+    height: ${({ type }) => (type === "textArea" ? "80px" : "48px")};
 
     display: flex;
     flex-direction: column;
