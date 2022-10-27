@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
     border: 0;
     list-style: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body{
@@ -16,5 +17,10 @@ body{
     height: 100vh;
 
     background-color: ${({ theme }) => theme.color.greyScale.grey8};
+}
+
+button {
+    font-family: ${({ theme }) => theme.typo.btn_bigText.fontFamily};
+    cursor: pointer;
 }
 `;
