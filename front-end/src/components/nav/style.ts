@@ -8,6 +8,7 @@ export const NavStyled = styled.nav`
 
         display: none;
         flex-direction: column;
+        gap: 44px;
 
         position: absolute;
         top: 80px;
@@ -15,7 +16,7 @@ export const NavStyled = styled.nav`
 
         box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.09);
 
-        gap: 44px;
+        background-color: ${({ theme }) => theme.color.greyScale.grey10};
 
         .divider {
             height: 1px;
@@ -47,10 +48,14 @@ export const NavStyled = styled.nav`
         display: flex;
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: ${({ theme }) =>
+            theme.mediaScreens.mobile1}) {
         .nav,
         .nav.opened {
+            padding: 0;
             padding-right: 60px;
+
+            height: 79px;
 
             position: static;
 

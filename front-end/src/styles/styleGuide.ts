@@ -9,6 +9,7 @@ declare module "styled-components" {
             randomColors: IRandomColors;
         };
         typo: ITextTypos;
+        mediaScreens: IMediaScreens;
     }
 }
 
@@ -85,6 +86,10 @@ interface ITextStyle {
     weight: string;
     size: string;
     fontFamily: string;
+}
+
+interface IMediaScreens {
+    mobile1: string;
 }
 
 export const styleGuide: DefaultTheme = {
@@ -233,5 +238,8 @@ export const styleGuide: DefaultTheme = {
             size: "14px",
             fontFamily: "'Inter', sans-serif",
         },
+    },
+    mediaScreens: {
+        mobile1: "850px",
     },
 };

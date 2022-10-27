@@ -15,8 +15,10 @@ export const LoginRegisterStyled = styled.li`
         width: fit-content;
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: ${({ theme }) =>
+            theme.mediaScreens.mobile1}) {
         flex-direction: row;
+        align-items: center;
     }
 `;
 
@@ -89,7 +91,8 @@ export const UserLoggedStyled = styled.li`
         }
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: ${({ theme }) =>
+            theme.mediaScreens.mobile1}) {
         .internal-nav {
             > ul {
                 left: -65px;
