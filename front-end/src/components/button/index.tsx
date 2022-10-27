@@ -1,15 +1,21 @@
-interface IButton {
-    text: string;
-    size: "big" | "medium";
-    bgColor: string;
-    textColor: string;
-    borderColor?: string;
-    hoverTextColor?: string;
-    hoverBgColor?: string;
-    onClick(): void;
-}
+import { StyledButton } from "./style";
 
-function Button(btnProp: IButton) {
-    return <button onClick={btnProp.onClick}>text button</button>;
+import { IComponentButton } from "../../interfaces";
+
+function Button(btnProp: IComponentButton) {
+    return (
+        <StyledButton
+            size={btnProp.size}
+            textColor={btnProp.textColor}
+            bgColor={btnProp.bgColor}
+            borderColor={btnProp.borderColor}
+            hoverTextColor={btnProp.hoverTextColor}
+            hoverBgColor={btnProp.hoverBgColor}
+            hoverBorderColor={btnProp.hoverBorderColor}
+            onClick={btnProp.onClick}
+        >
+            {btnProp.text}
+        </StyledButton>
+    )
 }
 export default Button;
