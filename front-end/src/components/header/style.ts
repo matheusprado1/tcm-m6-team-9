@@ -10,7 +10,7 @@ export const HeaderStyled = styled.header`
     align-items: center;
     width: 100%;
 
-    color: ${({ theme }) => theme.color.greyScale.grey10};
+    background-color: ${({ theme }) => theme.color.greyScale.grey10};
 
     border-bottom: 1px solid ${({ theme }) => theme.color.greyScale.grey6};
 
@@ -35,7 +35,8 @@ export const HeaderStyled = styled.header`
         }
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: ${({ theme }) =>
+            theme.mediaScreens.mobile1}) {
         section {
             .btn-menu-icon {
                 display: none;
