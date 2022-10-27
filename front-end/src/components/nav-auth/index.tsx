@@ -1,3 +1,5 @@
+import { styleGuide } from "../../styles/styleGuide"
+import Button from "../button"
 import { LoginRegisterStyled, UserLoggedStyled } from "./style"
 
 type NavAuthProps = {
@@ -22,7 +24,16 @@ export function NavAuth({isUserLogged}: NavAuthProps): JSX.Element {
         : 
         (<LoginRegisterStyled>
             <a href="#">Fazer Login</a>
-            <button>Cadastrar</button>
+            <Button
+                text="Cadastrar"
+                size="big"
+                textColor={styleGuide.color.greyScale.grey0}
+                bgColor={styleGuide.color.greyScale.grey10}
+                borderColor={styleGuide.color.greyScale.grey4}
+                hoverTextColor={styleGuide.color.greyScale.whiteFixed}
+                hoverBgColor={styleGuide.color.greyScale.grey0}
+                hoverBorderColor={styleGuide.color.greyScale.grey0}
+                onClick={()=>console.log('Cadastrar')}/>
         </LoginRegisterStyled>)
     )
 }
