@@ -7,7 +7,7 @@ type NavProps = {
 }
 
 export function Nav({className}: NavProps): JSX.Element {
-    const [isUserLogged, setIsUserLogged] = useState(true)
+    const [isUserLogged, setIsUserLogged] = useState<boolean>(false)
     return (
         <NavStyled>
                 <ul className={className}>
